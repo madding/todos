@@ -34,7 +34,7 @@ class TodosController < ApplicationController
   def destroy
     @todo = Todo.find(params[:id])
     @todo.destroy
-    redirect_to todos_path
+    redirect_to todos_path, notice: 'Задача была успешно удалена'
   end
 
   private
