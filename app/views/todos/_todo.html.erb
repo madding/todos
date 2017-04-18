@@ -1,0 +1,15 @@
+<div class="todo">
+  <div class="row">
+    <div class="col-md-11"><h3><%= todo.title %></h3></div>
+    <div class="col-md-1">
+      <%= link_to '', todo,
+        data: { confirm: 'Вы действительно хотите удалить задачу ?', method: :delete },
+        title: 'Удалить',
+        class: 'btn btn-default glyphicon glyphicon-trash' %>
+      <%= link_to '', edit_todo_path(todo), title: 'Редактировать',
+        class: 'btn btn-default glyphicon glyphicon-pencil' %>
+    </div>
+  </div>
+
+  <p><%= todo.description %></p>
+</div>

@@ -1,0 +1,13 @@
+ru:
+  simple_form:
+    labels:
+      todo:
+        title: 'Заголовок'
+        description: 'Описание'
+  activerecord:
+    errors:
+      models:
+        todo:
+          attributes:
+            title:
+              blank: 'Заголовок обязателен к заполнению'

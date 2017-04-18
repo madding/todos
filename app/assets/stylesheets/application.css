@@ -10,6 +10,36 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require jquery.ui.all
  *= require_tree .
  *= require_self
  */
+
+div.inner {
+  width: 80%;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.inner .flash {
+  margin-right: 0;
+  margin-left: 0;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 12px;
+}
+
+div.todos .todo {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+

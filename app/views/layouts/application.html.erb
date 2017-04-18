@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>Todos</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="inner">
+  <div>
+    <% flash.each do |key, value| %>
+      <p class="flash <%= flash_class(key) %>">
+        <%= value %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= yield %>
+</div>
 
 </body>
 </html>
