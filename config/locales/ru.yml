@@ -1,4 +1,9 @@
 ru:
+  todo:
+    status:
+      new: 'Новая'
+      working: 'В работе'
+      completed: 'Выполнена'
   simple_form:
     labels:
       todo:

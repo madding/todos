@@ -1,0 +1,4 @@
+<% unless @todo.valid? %>
+  alert('<%= escape_javascript(@todo.errors.full_messages.join("\n")) %>');
+  location.reload();
+<% end %>

@@ -16,7 +16,9 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-ui-themes'
 
+gem 'workflow'
 gem 'twitter-bootstrap-rails'
+gem 'js-routes'
 gem 'simple_form'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring', group: :development

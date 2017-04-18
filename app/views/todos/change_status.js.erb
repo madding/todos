@@ -1,0 +1,5 @@
+<% if @error %>
+  alert('<%= escape_javascript @error %>');
+<% else %>
+  $('.todo[data-todo-id=<%= @todo.id %>]').replaceWith('<%= escape_javascript render(@todo) %>');
+<% end %>

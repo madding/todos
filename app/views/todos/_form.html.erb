@@ -1,6 +1,8 @@
 <%= simple_form_for @todo, html: { class: 'form-horizontal' } do |f| %>
   <%= f.input :title %>
   <%= f.input :description %>
+  <%= f.input :status, collection: status_collection %>
+
 
   <%= f.submit 'Сохранить' %>
 <% end %>

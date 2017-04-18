@@ -1,6 +1,6 @@
 <h1>Список задач</h1>
 
-<%= link_to 'Новая задача', new_todo_path, id: 'new_todo_dialog' %>
+<%= link_to 'Новая задача', new_todo_path, id: 'new_todo_dialog', class: 'btn btn-link' %>
 
 <div class="todos">
   <% if @todos.present? %>
