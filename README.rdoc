@@ -1,6 +1,6 @@
 == README
 
-Simple todo manager. Create, edit, change priority, change state.
+Простое приложение для управления списком задач. Создание, удаление, редактирование и изменение приоритета задач.
 
 * Ruby version
   2.2.1
