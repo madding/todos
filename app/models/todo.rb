@@ -7,6 +7,7 @@ class Todo < ActiveRecord::Base
   validates :index, uniqueness: true
 
   before_validation :set_index, :move_todo
+  after_destroy :update_indexes
 
   workflow do
     state :new do
@@ -42,6 +43,10 @@ class Todo < ActiveRecord::Base
 
   def move_up?
     move == 'up'
+  end
+
+  def update_indexes
+    Todo.where('"index" > ?', index).update_all('"index" = ("index" - 1)')
   end
 
   # чтобы не было дублей, номер надо ставить либо с локом, либо в БД

@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_filter :find_todo, only: [:change_status, :destroy, :edit, :update]
+  before_action :find_todo, only: [:change_status, :destroy, :edit, :update]
   def index
     @todos = Todo.order(:index)
   end

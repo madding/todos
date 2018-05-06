@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 50
+
+development:
+  <<: *default
+  database: todos_development
+
+test:
+  <<: *default
+  database: todos_test
+
+production:
+  <<: *default
+  database: todos_production
