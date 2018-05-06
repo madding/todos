@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
-//= require twitter/bootstrap
-//= require jquery.ui.all
+//= require jquery-ui
 //= require js-routes
 //= require_tree .
